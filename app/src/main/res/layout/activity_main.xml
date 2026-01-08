@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_space_bg"> <TextView
+    android:id="@+id/status"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="60dp"
+    android:text="STAR'S TURN ⭐"
+    android:textColor="#FFFFFF"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:letterSpacing="0.1"
+    android:shadowColor="#000000"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="15" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:background="#4D000000"
+            android:padding="10dp">
+
+            <Button android:id="@+id/btn0" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn1" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn2" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn3" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn4" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn5" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn6" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn7" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+            <Button android:id="@+id/btn8" android:layout_width="100dp" android:layout_height="100dp" android:onClick="playerTap" android:textSize="40sp" android:backgroundTint="#20FFFFFF" android:layout_margin="2dp"/>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/winnerBox"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:background="#CC000000"
+            android:visibility="gone"
+            android:shadowColor="#FFFFFF"
+            android:shadowRadius="20" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET GAME"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:onClick="gameReset"
+        android:backgroundTint="#FF4444"
+        android:visibility="gone" />
+
+</RelativeLayout>

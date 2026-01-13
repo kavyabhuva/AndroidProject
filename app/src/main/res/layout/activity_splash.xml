@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ready for Game ?"
+            android:text="Ready for Game?"
             android:textColor="#BDBDBD"
             android:textSize="16sp"
             android:textStyle="bold"

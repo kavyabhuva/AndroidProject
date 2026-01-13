@@ -1,15 +1,58 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/moon_surface_bg"
+    android:background="@drawable/galaxy_bg"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASTRO\nTAC TOE"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:shadowColor="#00D2FF"
+        android:shadowRadius="20"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="50dp"/>
 
     <Button
         android:id="@+id/startBtn"
-        android:layout_width="250dp"
+        android:layout_width="260dp"
         android:layout_height="70dp"
-        android:text="START GAME"
-        android:backgroundTint="#00D2FF"
+        android:text="START MISSION"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
         android:onClick="startGame" />
+
+    <Button
+        android:id="@+id/howToPlayBtn"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="HOW TO PLAY"
+        android:backgroundTint="#673AB7"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="15dp"
+        android:onClick="showInstructions" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="EXIT GAME"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF"
+        android:onClick="exitGame" />
+
 </LinearLayout>
+</RelativeLayout>

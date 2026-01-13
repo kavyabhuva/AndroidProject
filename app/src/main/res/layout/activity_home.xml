@@ -42,6 +42,8 @@
         android:text="HOW TO PLAY"
         android:backgroundTint="#673AB7"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_marginBottom="15dp"
         android:onClick="showInstructions" />
 
@@ -50,6 +52,8 @@
         android:layout_width="260dp"
         android:layout_height="60dp"
         android:text="EXIT GAME"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:backgroundTint="#E91E63"
         android:textColor="#FFFFFF"
         android:onClick="exitGame" />

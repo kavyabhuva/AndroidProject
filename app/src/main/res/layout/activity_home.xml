@@ -29,7 +29,6 @@
             android:text="START MISSION"
             android:backgroundTint="#00BCD4"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:onClick="startGame"
             android:layout_marginBottom="15dp" />
 

@@ -28,6 +28,8 @@
             android:layout_height="70dp"
             android:text="START MISSION"
             android:backgroundTint="#00BCD4"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:onClick="startGame"
             android:layout_marginBottom="15dp" />
 
@@ -36,6 +38,8 @@
             android:layout_height="60dp"
             android:text="HOW TO PLAY"
             android:backgroundTint="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:onClick="showInstructions"
             android:layout_marginBottom="15dp" />
 
@@ -44,6 +48,8 @@
             android:layout_height="60dp"
             android:text="EXIT GAME"
             android:backgroundTint="#E91E63"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:onClick="exitGame" />
     </LinearLayout>
 </RelativeLayout>

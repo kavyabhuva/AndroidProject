@@ -7,14 +7,13 @@ import android.view.View;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.demo3.R;
-
 public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+    } // <--- THIS WAS MISSING. This closes the onCreate method.
 
     // Game chalu karva mate
     public void startGame(View v) {
@@ -50,6 +49,6 @@ public class HomeActivity extends AppCompatActivity {
 
     // App exit karva mate
     public void exitGame(View v) {
-        finishAffinity();
+        finishAffinity(); //
     }
 }

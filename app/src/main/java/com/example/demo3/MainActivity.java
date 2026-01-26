@@ -38,13 +38,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkWinner() {
+        boolean winnerFound = false;
+
+        // 1. Winner Check logic
         for (int[] winPos : winPositions) {
             if (gameState[winPos[0]] == gameState[winPos[1]] &&
                     gameState[winPos[1]] == gameState[winPos[2]] &&
                     gameState[winPos[0]] != 2) {
+
+                winnerFound = true;
                 gameActive = false;
                 String winner = (gameState[winPos[0]] == 0) ? "STAR ⭐" : "MOON 🌙";
                 showFinalMessage(winner + " WON!");
+                return;
+            }
+        }
+
+        // 2. Draw Check logic (Jo koi winner na male to)
+        if (!winnerFound) {
+            boolean isDraw = true;
+            for (int state : gameState) {
+                if (state == 2) { // Hji jagya khali che
+                    isDraw = false;
+                    break;
+                }
+            }
+            if (isDraw) {
+                gameActive = false;
+                showFinalMessage("MATCH DRAW! 🤝");
             }
         }
     }
@@ -54,9 +75,12 @@ public class MainActivity extends AppCompatActivity {
         TextView winnerBox = findViewById(R.id.winnerBox);
         winnerBox.setText(msg);
         winnerBox.setVisibility(View.VISIBLE);
+
         findViewById(R.id.resetBtn).setVisibility(View.VISIBLE);
         findViewById(R.id.mainGrid).setVisibility(View.INVISIBLE);
     }
 
-    public void gameReset(View v) { recreate(); }
+    public void gameReset(View v) {
+        recreate(); // Game fari chalu karva mate
+    }
 }

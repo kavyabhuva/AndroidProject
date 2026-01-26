@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 winnerFound = true;
                 gameActive = false;
                 String winner = (gameState[winPos[0]] == 0) ? "STAR ⭐" : "MOON 🌙";
-                showFinalMessage(winner + " WON!");
+                showFinalMessage(winner + "WON!");
                 return;
             }
         }

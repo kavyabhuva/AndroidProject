@@ -35,7 +35,7 @@
         <Button
             android:layout_width="260dp"
             android:layout_height="60dp"
-            android:text="HOW TO PLAY ?"
+            android:text="HOW TO PLAY?"
             android:backgroundTint="#673AB7"
             android:textSize="20sp"
             android:textStyle="bold"

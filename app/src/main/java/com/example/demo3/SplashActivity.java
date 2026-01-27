@@ -11,6 +11,9 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        // --- Audio Service sharu karva mate niche ni line add kari ---
+        startService(new Intent(this, MyBackgroundMusic.class));
+
         // 3 seconds pachi HomeActivity par jase
         new Handler().postDelayed(new Runnable() {
             @Override

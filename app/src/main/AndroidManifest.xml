@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <!-- Splash Screen (Launcher) -->
         <activity
             android:name="com.example.demo3.SplashActivity"
             android:exported="true">
@@ -20,15 +19,15 @@
             </intent-filter>
         </activity>
 
-        <!-- Home Screen -->
         <activity
             android:name="com.example.demo3.HomeActivity"
             android:exported="false" />
 
-        <!-- Main Activity -->
         <activity
             android:name="com.example.demo3.MainActivity"
             android:exported="false" />
+
+        <service android:name=".MyBackgroundMusic" android:enabled="true" />
 
     </application>
 

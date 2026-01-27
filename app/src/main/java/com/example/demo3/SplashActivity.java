@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
         // --- Audio Service sharu karva mate niche ni line add kari ---

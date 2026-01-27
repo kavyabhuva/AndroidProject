@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ASTRO\nTAC TOE"
+            android:text="ASTRO\TAC TOE"
             android:textColor="#FFFFFF"
             android:textSize="45sp"
             android:textStyle="bold"

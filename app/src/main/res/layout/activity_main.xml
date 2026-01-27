@@ -2,18 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/galaxy_bg"> <TextView
-    android:id="@+id/status"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="40dp"
-    android:text="Star's Turn ⭐"
-    android:textColor="#FFFFFF"
-    android:textSize="28sp"
-    android:textStyle="bold"
-    android:shadowColor="#00D2FF"
-    android:shadowRadius="10" />
+    android:background="@drawable/galaxy_bg">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Star's Turn ⭐"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:shadowColor="#00D2FF"
+        android:shadowRadius="10" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -53,12 +55,27 @@
     </FrameLayout>
 
     <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="EXIT GAME"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#F44336"
+        android:onClick="gameExit"
+        android:visibility="gone" />
+
+    <Button
         android:id="@+id/resetBtn"
         android:layout_width="220dp"
         android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_above="@id/exitBtn"
+        android:layout_marginBottom="15dp"
         android:text="PLAY AGAIN"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
